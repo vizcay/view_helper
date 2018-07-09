@@ -1,0 +1,11 @@
+<h1>ERB</h1>
+
+<%= bordered do %>
+  <p>This works</p>
+<% end %>
+
+<hr />
+
+<%= Builder.new.bordered do %>
+  <p>This not works</p>
+<% end %>
